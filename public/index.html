@@ -33,6 +33,10 @@
 <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 <script defer src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-<!-- defer : JavaScript PDF01 p.11 : react가 처리할것을 다 처리한 후 마지막에 js가 작동되도록 -->
+<!-- defer : JavaScript PDF 1.11 : react가 처리할것을 다 처리한 후 마지막에 js가 작동되도록 -->
+<!-- 기존 html에서는 위에 코드가 작성되어있고 스크립트가 동작하기 때문에 위에서 코드를 찾아서 동작함 -->
+<!-- 하지만 지금은 위에 코드가 없음 ===> 코드가 실행되는 순서에서 약간 차이가 발생 -->
+<!-- defer를 넣어주면 자바스크립트가 맨 마지막에 동작 -->
+<!-- 근데 좋은 방법은 아님 ===> jsx에 import 해서 넣는게 좋음 -->
 
 </html>
